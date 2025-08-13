@@ -1,0 +1,72 @@
+/* Student Management - Simple CSS */
+
+/* Basic page styling */
+body {
+  font-family: Arial, sans-serif;
+   background: linear-gradient(to left, rgba(5, 33, 61, 0.858), white);
+}
+
+/* Center all content */
+center {
+  display: block;
+  margin-top: 40px;
+}
+
+/* Headings */
+h1 {
+  color: #333;
+}
+
+/* Form styling */
+form {
+  margin-bottom: 20px;
+}
+
+input, button {
+  padding: 8px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Search box */
+input[type="text"] {
+  width: 200px;
+    padding: 8px;
+    border: 1px solid #a90e0e;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(54, 32, 32, 0.1);
+}
+
+/* Table styling */
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin-top: 20px;
+  background-color: white;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #f9f9f9;
+}

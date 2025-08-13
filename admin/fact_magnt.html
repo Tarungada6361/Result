@@ -1,11 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Faculty Management</title>
+    <link rel="stylesheet" href="style/fact.css">
 </head>
-<body>
-    
+<body class="body">
+    <center>
+        <h1 class="main-title">Faculty Management</h1>
+
+        <h2 class="sub-title">Add New Faculty</h2>
+        <form class="faculty-form">
+            <label class="form-label">Faculty Name:</label>
+            <input type="text" name="name" class="form-input"><br><br>
+
+            <label class="form-label">Faculty ID:</label>
+            <input type="text" name="id" class="form-input"><br><br>
+
+            <label class="form-label">Department:</label>
+            <input type="text" name="department" class="form-input"><br><br>
+
+            <label class="form-label">Designation:</label>
+            <input type="text" name="designation" class="form-input"><br><br>
+
+            <label class="form-label">Specialization:</label>
+            <input type="text" name="specialization" class="form-input"><br><br>
+
+            <label class="form-label">Joining Date:</label>
+            <input type="date" name="joining_date" class="form-input"><br><br>
+
+            <label class="form-label">Email:</label>
+            <input type="email" name="email" class="form-input"><br><br>
+
+            <label class="form-label">Phone Number:</label>
+            <input type="text" name="phone" class="form-input"><br><br>
+
+            <label class="form-label">Address:</label>
+            <textarea name="address" rows="3" cols="30" class="form-textarea"></textarea><br><br>
+
+            <div class="btn-container">
+                <button type="submit" class="btn btn-submit">Add Faculty</button>
+                <button type="reset" class="btn btn-reset">Clear</button>
+            </div>
+        </form>
+    </center>
 </body>
 </html>

@@ -1,0 +1,88 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+  background: linear-gradient(to left, rgba(66, 85, 103, 0.858), white);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+
+/* Headings */
+h1 {
+    color: #eef0f2;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #edeff1;
+    margin-top: 30px;
+}
+
+/* Form Styling */
+form {
+    background: rgb(223, 221, 221);
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-top: 10px;
+    
+}
+
+label {
+    display: inline-block;
+    width: 140px;
+    text-align: right;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    padding: 5px;
+    width: 200px;
+    margin-bottom: 10px;
+    border: 1px solid #687bdb;
+    border-radius: 4px;
+
+}
+
+textarea {
+    height: 60px;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Table Styling */
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    width: 90%;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
