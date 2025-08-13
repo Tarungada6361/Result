@@ -1,11 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style/viewreport.css" />
+    <title>Reports View</title>
 </head>
 <body>
-    
+    <center>
+        <h1 class="page-title">Reports (View)</h1>
+
+        <h3 class="section-title">Filters</h3>
+        <form class="filters-form">
+            Course:
+            <select name="course" class="filter-select">
+                <option>Select Course</option>
+                <option>DBMS</option>
+                <option>OS</option>
+                <option>Networking</option>
+            </select>
+            &nbsp;&nbsp;
+            AY:
+            <select name="ay" class="filter-select">
+                <option>Select AY</option>
+                <option>2023-24</option>
+                <option>2024-25</option>
+            </select>
+            &nbsp;&nbsp;
+            Semester:
+            <select name="semester" class="filter-select">
+                <option>Select Semester</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+            &nbsp;&nbsp;
+            Grade:
+            <select name="grade" class="filter-select">
+                <option>Select Grade</option>
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+                <option>D</option>
+            </select>
+            <br><br>
+            <button type="submit" class="btn-submit">Apply Filters</button>
+        </form>
+
+        <hr>
+
+        <h3 class="section-title">Distribution</h3>
+        <table class="report-table" border="1" cellpadding="10" cellspacing="0">
+            <tr>
+                <th>Grade</th>
+                <th>Count</th>
+            </tr>
+            <tr><td>A</td><td>10</td></tr>
+            <tr><td>B</td><td>15</td></tr>
+            <tr><td>C</td><td>7</td></tr>
+            <tr><td>D</td><td>3</td></tr>
+        </table>
+
+        <h3 class="section-title">Average</h3>
+        <table class="report-table" border="1" cellpadding="10" cellspacing="0">
+            <tr>
+                <th>Course</th>
+                <th>Average Marks</th>
+            </tr>
+            <tr><td>DBMS</td><td>72</td></tr>
+            <tr><td>OS</td><td>68</td></tr>
+        </table>
+
+        <h3 class="section-title">Pass %</h3>
+        <table class="report-table" border="1" cellpadding="10" cellspacing="0">
+            <tr>
+                <th>Course</th>
+                <th>Pass Percentage</th>
+            </tr>
+            <tr><td>DBMS</td><td>90%</td></tr>
+            <tr><td>OS</td><td>85%</td></tr>
+        </table>
+    </center>
 </body>
 </html>

@@ -1,11 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style/viewreport.css" />
+    <title>Faculty Results</title>
 </head>
-<body>
-    
+<body class="body">
+    <h1 class="title-main">Results</h1>
+    <div class="btn-group">
+        <button class="btn">Insert Results</button>
+        <button class="btn">View Results</button>
+    </div>
+    <hr />
+    <h2 class="title-sub">Insert Results</h2>
+    <form class="form-container">
+        <label class="form-label" for="course">Course*:</label>
+        <select id="course" class="form-select" name="course">
+            <option>Select Course</option>
+            <option>DBMS</option>
+            <option>OS</option>
+        </select>
+
+        <label class="form-label" for="student">Student*:</label>
+        <select id="student" class="form-select" name="student">
+            <option>Select Student</option>
+            <option>Tarun</option>
+            <option>Rahul</option>
+        </select>
+
+        <label class="form-label" for="internal">Internal:</label>
+        <input id="internal" type="number" class="form-input" name="internal" />
+
+        <label class="form-label" for="external">External:</label>
+        <input id="external" type="number" class="form-input" name="external" />
+
+        <label class="form-label" for="remarks">Remarks:</label>
+        <input id="remarks" type="text" class="form-input" name="remarks" />
+
+        <button type="submit" class="btn">Submit</button>
+    </form>
+    <hr />
+    <h2 class="title-sub">View Results</h2>
+    <table class="results-table" border="1" cellpadding="10" cellspacing="0">
+        <thead>
+            <tr>
+                <th>ResultID</th>
+                <th>Student</th>
+                <th>Course</th>
+                <th>Internal</th>
+                <th>External</th>
+                <th>Total</th>
+                <th>Grade</th>
+                <th>AY</th>
+                <th>Semester</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>R001</td>
+                <td>Tarun</td>
+                <td>DBMS</td>
+                <td>25</td>
+                <td>50</td>
+                <td>75</td>
+                <td>A</td>
+                <td>2024-25</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>R002</td>
+                <td>Rahul</td>
+                <td>OS</td>
+                <td>22</td>
+                <td>48</td>
+                <td>70</td>
+                <td>B+</td>
+                <td>2024-25</td>
+                <td>5</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>

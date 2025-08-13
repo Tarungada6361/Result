@@ -1,11 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Course Management</title>
+    <link rel="stylesheet" href="style/course.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1 class="main-title">Course Management</h1>
+
+        <h2 class="section-title">Add New Course</h2>
+        <form class="course-form">
+            <label class="form-label">Course Title:</label>
+            <input type="text" name="title" class="form-input"><br><br>
+
+            <label class="form-label">Course Code:</label>
+            <input type="text" name="code" class="form-input"><br><br>
+
+            <label class="form-label">Instructor:</label>
+            <input type="text" name="instructor" class="form-input"><br><br>
+
+            <label class="form-label">Level:</label>
+            <select name="level" class="form-select">
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Advanced">Advanced</option>
+            </select><br><br>
+
+            <label class="form-label">Credits:</label>
+            <input type="number" name="credits" class="form-input"><br><br>
+
+            <label class="form-label">Duration (weeks):</label>
+            <input type="number" name="duration" class="form-input"><br><br>
+
+            <label class="form-label">Description:</label><br>
+            <textarea name="desc" class="form-textarea"></textarea><br><br>
+
+            <input type="submit" value="Add Course" class="submit-btn">
+        </form>
+
+        <h2 class="section-title">Course List</h2>
+        <table class="course-table">
+            <tr>
+                <th>Title</th>
+                <th>Code</th>
+                <th>Instructor</th>
+                <th>Level</th>
+                <th>Credits</th>
+                <th>Duration</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Intro to Web Development</td>
+                <td>WEB101</td>
+                <td>A. Sharma</td>
+                <td>Beginner</td>
+                <td>3</td>
+                <td>8</td>
+                <td>Basics of HTML, CSS, and JavaScript.</td>
+            </tr>
+            <tr>
+                <td>Data Structures</td>
+                <td>CS201</td>
+                <td>R. Gupta</td>
+                <td>Intermediate</td>
+                <td>4</td>
+                <td>12</td>
+                <td>Arrays, Linked Lists, Trees, and Graphs.</td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>

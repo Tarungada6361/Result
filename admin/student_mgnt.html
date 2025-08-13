@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style/student.css" />
+  <title>Student Management</title>
 </head>
-<body>
-    
+<body class="page">
+  <center class="container">
+    <h1 class="title">Student Management</h1>
+
+    <!-- Simple form to add a student -->
+    <form class="student-form" action="#" method="post">
+      <input type="text" name="name" class="input" placeholder="Student Name" required>
+      <input type="text" name="student_id" class="input" placeholder="Student ID" required>
+      <input type="email" name="email" class="input" placeholder="Email">
+      <input type="text" name="course" class="input" placeholder="Course">
+      <button type="submit" class="btn">Add Student</button>
+    </form>
+
+    <p class="search-box">
+      <input type="text" class="input search" placeholder="Search by name or ID">
+    </p>
+
+    <!-- Table showing students -->
+    <table class="student-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>ID</th>
+          <th>Email</th>
+          <th>Course</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Alex Kumar</td>
+          <td>ST001</td>
+          <td>alex@example.com</td>
+          <td>Physics</td>
+          <td>Edit | Delete</td>
+        </tr>
+        <tr>
+          <td>Pooja Singh</td>
+          <td>ST002</td>
+          <td>pooja@example.com</td>
+          <td>Mathematics</td>
+          <td>Edit | Delete</td>
+        </tr>
+      </tbody>
+    </table>
+  </center>
 </body>
 </html>
